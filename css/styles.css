@@ -1,16 +1,27 @@
-.container {
-	display: flex;
-	height: 100vh;
+@font-face {
+	font-family: 'Pixel';
+	src: url(/font/VCR_OSD_MONO_1.001.ttf) format('truetype');
 }
 header {
 	color: white;
-	text-align: center;
-	padding-top: 16px;
+	padding: 0;
 	background-color: #831C91;
-	margin: 0;
+	margin-left: 16px;
+	font-family: Pixel;
 }
 body {
-	background-color: #462C7D;
+	background-color: #831C91;
+}
+.main-container {
+	display: flex;
+}
+.side-container {
+	margin-right: 8px;
+	width: 256px;
+}
+.navbar-container{
+	display:flex;
+	margin-bottom: 8px;
 }
 .navbar ul {
 	list-style-type: none;
@@ -26,13 +37,22 @@ body {
 .navbar ul li a{
 	display: block;
 	color: white;
-	padding: 8px 16px;
+	font-family: Pixel;
+	padding: 6px;
 	text-decoration: none;
 	text-align: center
 }
-.navbar ul li a:hover{
+.navbar ul li:hover{
 	background-color: #D552A3;
 }
-iframe {
-	flex-grow: 1;
+iframe{
+	border: solid;
+	border-color:#D552A3;
+}
+iframe#main{
+	flex: 1;
+}
+iframe#guestbook{
+	width: 250px;
+	height: 548px;
 }

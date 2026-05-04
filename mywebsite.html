@@ -6,6 +6,7 @@
 	<title>My Website</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/getRecentGame.js"></script>
 </head>
 <body>
 	<header>
@@ -14,18 +15,27 @@
 			<img src="https://moods.imood.com/display/uname-Brugr/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of Brugr at www.imood.com" border="0">
 		</a>
 	</header>
-	<div class="container">
-		<nav class = "navbar">
-			<ul>
-				<li><a href="welcome.html" target="main-iframe" class="active">Home</a></li>
-				<li><a href="photography.html" target="main-iframe">Photography</a></li>
-				<li><a href="about.html" target="main-iframe">About</a></li>
-			</ul>
-		</nav>
-		<iframe src="welcome.html" name="main-iframe"></iframe>
+	<div class="main-container">
+		<div class="side-container">
+			<div class="navbar-container">
+				<nav class = "navbar">
+					<ul>
+						<li><a href="welcome.html" target="main-iframe">Home</a></li>
+						<li><a href="" target="main-iframe">Blog</a></li>
+						<li><a href="about.html" target="main-iframe">About</a></li>
+					</ul>
+				</nav>
+				<nav class = "navbar">
+					<ul>
+						<li><a href="" target="main-iframe">Gaming</a></li>
+						<li><a href="photography.html" target="main-iframe">Photography</a></li>
+						<li><a href="" target="main-iframe">Reading</a></li>
+					</ul>
+				</nav>
+			</div>
+			<iframe src="https://brugr.atabook.org" id="guestbook"></iframe>
+		</div>
+		<iframe src="welcome.html" name="main-iframe" id="main"></iframe>
 	</div>
 </body>
-<style>
-
-</style>
 </html>
